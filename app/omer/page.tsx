@@ -3,13 +3,11 @@
 import { useScroll, useTransform } from "framer-motion";
 import React from "react";
 import { GoogleGeminiEffect } from "../components/ui/google-gemini-effect";
-import { TextGenerateEffect } from "../components/ui/text-generate-effect";
-import { TracingBeamDemo } from "./compenents/scroll";
-import { Home, MessageCircle, User } from "lucide-react";
+
 import { LampContainer } from "../components/ui/lamp";
 import { motion } from "framer-motion";
 import { StickyScroll } from "../components/ui/sticky-scroll-reveal";
-import { HeroParallax } from "../components/ui/hero-parallax";
+import { HoverEffect } from "../components/ui/card-hover-effect";
 
 export default function GoogleGeminiEffectDemo() {
   const ref = React.useRef(null);
@@ -25,44 +23,42 @@ export default function GoogleGeminiEffectDemo() {
   const pathLengthFifth = useTransform(scrollYProgress, [0, 0.8], [0, 1.2]);
   const words = `Oxygen gets you high. In a catastrophic emergency, we're taking giant, panicked breaths. Suddenly you become euphoric, docile. You accept your fate. It's all right here. Emergency water landing, six hundred miles an hour. Blank faces, calm as Hindu cows
 `;
-  const products = [
+  const projects = [
     {
-      title: "Moonbeam",
-      link: "https://gomoonbeam.com",
-      thumbnail:
-        "https://aceternity.com/images/products/thumbnails/new/moonbeam.png",
+      title: "Stripe",
+      description:
+        "A technology company that builds economic infrastructure for the internet.",
+      link: "https://stripe.com",
     },
     {
-      title: "Cursor",
-      link: "https://cursor.so",
-      thumbnail:
-        "https://aceternity.com/images/products/thumbnails/new/cursor.png",
+      title: "Netflix",
+      description:
+        "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
+      link: "https://netflix.com",
     },
     {
-      title: "Rogue",
-      link: "https://userogue.com",
-      thumbnail:
-        "https://aceternity.com/images/products/thumbnails/new/rogue.png",
-    },
-
-    {
-      title: "Editorially",
-      link: "https://editorially.org",
-      thumbnail:
-        "https://aceternity.com/images/products/thumbnails/new/editorially.png",
+      title: "Google",
+      description:
+        "A multinational technology company that specializes in Internet-related services and products.",
+      link: "https://google.com",
     },
     {
-      title: "Rogue",
-      link: "https://userogue.com",
-      thumbnail:
-        "https://aceternity.com/images/products/thumbnails/new/rogue.png",
+      title: "Meta",
+      description:
+        "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
+      link: "https://meta.com",
     },
-
     {
-      title: "Editorially",
-      link: "https://editorially.org",
-      thumbnail:
-        "https://aceternity.com/images/products/thumbnails/new/editorially.png",
+      title: "Amazon",
+      description:
+        "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
+      link: "https://amazon.com",
+    },
+    {
+      title: "Microsoft",
+      description:
+        "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
+      link: "https://microsoft.com",
     },
   ];
 
@@ -123,11 +119,9 @@ export default function GoogleGeminiEffectDemo() {
       <div>
         <StickyScroll content={content} />
       </div>
-      <TracingBeamDemo />
-      <div className="p-10">
-        <StickyScroll content={content} />
+      <div className="max-w-5xl mx-auto p-10">
+        <HoverEffect items={projects} />
       </div>
-      <HeroParallax products={products} />
     </>
   );
 }

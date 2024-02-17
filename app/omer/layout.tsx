@@ -1,3 +1,4 @@
+"use client";
 import { Home, MessageCircle, User } from "lucide-react";
 import { FloatingNav } from "../components/ui/floating-navbar";
 

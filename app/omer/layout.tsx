@@ -1,5 +1,5 @@
 "use client";
-import { Home, MessageCircle, User } from "lucide-react";
+import { Home, Linkedin, MessageCircle, User } from "lucide-react";
 import { FloatingNav } from "../components/ui/floating-navbar";
 
 export default function DashboardLayout({
@@ -9,17 +9,18 @@ export default function DashboardLayout({
 }) {
   const navItems = [
     {
-      name: "Home",
-      link: "/",
+      name: "Github",
+      link: "https://github.com/omersomech",
+
       icon: <Home className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
-      name: "About",
-      link: "/about",
-      icon: <User className="h-4 w-4 text-neutral-500 dark:text-white" />,
+      name: "LinkedIn",
+      link: "https://www.linkedin.com/in/omersomech",
+      icon: <Linkedin className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
-      name: "Contact",
+      name: "Back to top",
       link: "/contact",
       icon: (
         <MessageCircle className="h-4 w-4 text-neutral-500 dark:text-white" />

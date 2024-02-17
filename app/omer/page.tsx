@@ -8,6 +8,7 @@ import { LampContainer } from "../components/ui/lamp";
 import { motion } from "framer-motion";
 import { StickyScroll } from "../components/ui/sticky-scroll-reveal";
 import { HoverEffect } from "../components/ui/card-hover-effect";
+import { GlowingStarsBackgroundCardPreview } from "./compenents/glowing";
 
 export default function GoogleGeminiEffectDemo() {
   const ref = React.useRef(null);
@@ -119,8 +120,13 @@ export default function GoogleGeminiEffectDemo() {
       <div>
         <StickyScroll content={content} />
       </div>
-      <div className="max-w-5xl mx-auto p-10">
+      {/* <div className="max-w-5xl mx-auto p-10 bg-slate-950 w-full">
         <HoverEffect items={projects} />
+      </div> */}
+      <div className=" grid grid-cols-3 p-10 bg-slate-400">
+        <GlowingStarsBackgroundCardPreview />
+        <GlowingStarsBackgroundCardPreview />
+        <GlowingStarsBackgroundCardPreview />
       </div>
     </>
   );

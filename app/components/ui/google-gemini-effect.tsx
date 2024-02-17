@@ -23,22 +23,19 @@ export const GoogleGeminiEffect = ({
   description?: string;
   className?: string;
 }) => {
-  const words = `Oxygen gets you high. In a catastrophic emergency, we're taking giant, panicked breaths. Suddenly you become euphoric, docile. You accept your fate. It's all right here. Emergency water landing, six hundred miles an hour. Blank faces, calm as Hindu cows
-`;
   return (
     <div className={cn("sticky top-80 ", className)}>
       <div className="text-lg md:text-7xl font-normal pb-4 text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-100 to-neutral-300">
         <div className="h-[40rem] w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
-          <h1 className="md:text-7xl text-3xl lg:text-9xl font-bold text-center text-white relative z-20 ">
-            Aceternity1
+          <h1 className="md:text-3xl text-3xl lg:text-5xl font-bold text-center text-white relative z-20 ">
+            {title || "user's title here"}
           </h1>
-          <div className="w-[40rem] h-40 relative">
+          <div className="w-[40rem] h-full relative">
             {/* Gradients */}
             <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
             <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4" />
             <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm" />
             <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4" />
-
             {/* Core component */}
             <SparklesCore
               background="transparent"
@@ -48,28 +45,18 @@ export const GoogleGeminiEffect = ({
               className="w-full h-full"
               particleColor="#FFFFFF"
             />
-
-            {/* Radial Gradient to prevent sharp edges */}
             <div className="absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
           </div>
         </div>
       </div>
 
-      <div className="text-xs md:text-xl font-normal text-center text-neutral-400 mt-4 max-w-screen mx-auto">
-        <TextGenerateEffect
-          words={`Hi there! I'm Omer, A Full Stack developer`}
-        />
-      </div>
-      <div className="h-[40rem] relative w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
-        <h1 className="md:text-7xl text-3xl lg:text-6xl font-bold text-center text-white relative z-20">
-          Build great products
-        </h1>
-      </div>
-
-      <div className="w-full h-[890px] -top-60 md:-top-40  flex items-center justify-center bg-red-transparent absolute ">
-        <button className="font-bold bg-white rounded-full md:px-4 md:py-2 px-2 py-1 md:mt-24 mt-8 z-30 md:text-base text-black text-xs  w-fit mx-auto ">
-          ui.aceternity.com
-        </button>
+      <div className="w-full h-[890px] -top-60 md:-top-24  flex items-center justify-center bg-red-transparent absolute ">
+        <div className="flex flex-col gap-14">
+          <TextGenerateEffect words={description || "Welcome"} />
+          <button className="font-bold bg-white rounded-full md:px-4 md:py-2 px-2 py-1 md:mt-24 mt-8 z-30 md:text-base text-black text-xs  w-fit mx-auto ">
+            Scroll down
+          </button>
+        </div>
       </div>
       <svg
         width="1440"

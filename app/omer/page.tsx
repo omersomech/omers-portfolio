@@ -25,6 +25,47 @@ export default function GoogleGeminiEffectDemo() {
   const pathLengthFifth = useTransform(scrollYProgress, [0, 0.8], [0, 1.2]);
   const words = `Oxygen gets you high. In a catastrophic emergency, we're taking giant, panicked breaths. Suddenly you become euphoric, docile. You accept your fate. It's all right here. Emergency water landing, six hundred miles an hour. Blank faces, calm as Hindu cows
 `;
+  const products = [
+    {
+      title: "Moonbeam",
+      link: "https://gomoonbeam.com",
+      thumbnail:
+        "https://aceternity.com/images/products/thumbnails/new/moonbeam.png",
+    },
+    {
+      title: "Cursor",
+      link: "https://cursor.so",
+      thumbnail:
+        "https://aceternity.com/images/products/thumbnails/new/cursor.png",
+    },
+    {
+      title: "Rogue",
+      link: "https://userogue.com",
+      thumbnail:
+        "https://aceternity.com/images/products/thumbnails/new/rogue.png",
+    },
+
+    {
+      title: "Editorially",
+      link: "https://editorially.org",
+      thumbnail:
+        "https://aceternity.com/images/products/thumbnails/new/editorially.png",
+    },
+    {
+      title: "Rogue",
+      link: "https://userogue.com",
+      thumbnail:
+        "https://aceternity.com/images/products/thumbnails/new/rogue.png",
+    },
+
+    {
+      title: "Editorially",
+      link: "https://editorially.org",
+      thumbnail:
+        "https://aceternity.com/images/products/thumbnails/new/editorially.png",
+    },
+  ];
+
   const content = [
     {
       title: "Collaborative Editing",
@@ -90,44 +131,3 @@ export default function GoogleGeminiEffectDemo() {
     </>
   );
 }
-
-export const products = [
-  {
-    title: "Moonbeam",
-    link: "https://gomoonbeam.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/moonbeam.png",
-  },
-  {
-    title: "Cursor",
-    link: "https://cursor.so",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/cursor.png",
-  },
-  {
-    title: "Rogue",
-    link: "https://userogue.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/rogue.png",
-  },
-
-  {
-    title: "Editorially",
-    link: "https://editorially.org",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editorially.png",
-  },
-  {
-    title: "Rogue",
-    link: "https://userogue.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/rogue.png",
-  },
-
-  {
-    title: "Editorially",
-    link: "https://editorially.org",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/editorially.png",
-  },
-];

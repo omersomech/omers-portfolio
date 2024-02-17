@@ -20,8 +20,8 @@ export default function DashboardLayout({
       icon: <Linkedin className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
-      name: "Back to top",
-      link: "/contact",
+      name: "projects",
+      link: "/projects",
       icon: (
         <MessageCircle className="h-4 w-4 text-neutral-500 dark:text-white" />
       ),

@@ -123,11 +123,11 @@ export default function GoogleGeminiEffectDemo() {
       {/* <div className="max-w-5xl mx-auto p-10 bg-slate-950 w-full">
         <HoverEffect items={projects} />
       </div> */}
-      <div className=" grid grid-cols-3 p-10 bg-slate-400">
+      {/* <div className=" grid grid-cols-3 p-10 bg-slate-400">
         <GlowingStarsBackgroundCardPreview />
         <GlowingStarsBackgroundCardPreview />
         <GlowingStarsBackgroundCardPreview />
-      </div>
+      </div> */}
     </>
   );
 }

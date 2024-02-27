@@ -10,6 +10,7 @@ import { StickyScroll } from "../components/ui/sticky-scroll-reveal";
 import { HoverEffect } from "../components/ui/card-hover-effect";
 import { GlowingStarsBackgroundCardPreview } from "./compenents/glowing";
 import { BentoGrid } from "../components/ui/bento-grid";
+import SectionProject from "../components/section/section-projects";
 
 export default function GoogleGeminiEffectDemo() {
   const ref = React.useRef(null);
@@ -87,7 +88,7 @@ export default function GoogleGeminiEffectDemo() {
     },
   ];
   return (
-    <>
+    <div>
       <div
         className="h-[400vh] bg-black w-screen dark:border dark:border-white/[0.1] rounded-md relative pt-40 overflow-clip"
         ref={ref}
@@ -121,7 +122,7 @@ export default function GoogleGeminiEffectDemo() {
       <div>
         <StickyScroll content={content} />
       </div>
-
+      <SectionProject />
       {/* <div className="max-w-5xl mx-auto p-10 bg-slate-950 w-full">
         <HoverEffect items={projects} />
       </div> */}
@@ -130,6 +131,6 @@ export default function GoogleGeminiEffectDemo() {
         <GlowingStarsBackgroundCardPreview />
         <GlowingStarsBackgroundCardPreview />
       </div> */}
-    </>
+    </div>
   );
 }

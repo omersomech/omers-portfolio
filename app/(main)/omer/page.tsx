@@ -24,7 +24,7 @@ export default function BentoGridThirdDemo() {
           title={item.title}
           description={item.description}
           header={item.header}
-          className={cn("[&>p:text-lg]", item.className)}
+          className={cn("[&>p:text-lg] bg-slate-50", item.className)}
           icon={item.icon}
         />
       ))}
@@ -194,19 +194,21 @@ const SkeletonFour = () => {
       initial="initial"
       animate="animate"
       whileHover="hover"
-      className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-row space-x-2"
+      className="flex flex-1 w-full h-full min-h-[6rem] dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-row space-x-2 "
     >
       <motion.div
         variants={first}
-        className="h-full w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center"
+        className="h-full w-1/3 rounded-2xl bg-gray-100 p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center"
       >
-        <Image
-          src="https://pbs.twimg.com/profile_images/1417752099488636931/cs2R59eW_400x400.jpg"
-          alt="avatar"
-          height="100"
-          width="100"
-          className="rounded-full h-10 w-10"
-        />
+        <div className="text-red-300">
+          <Image
+            src="/react.svg"
+            alt="avatar"
+            height="100"
+            width="100"
+            className="rounded-full h-10 w-10 "
+          />
+        </div>
         <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
           React, Next js
         </p>

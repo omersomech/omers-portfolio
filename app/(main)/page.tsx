@@ -11,6 +11,7 @@ import { HoverEffect } from "../components/ui/card-hover-effect";
 import { GlowingStarsBackgroundCardPreview } from "./compenents/glowing";
 import { BentoGrid } from "../components/ui/bento-grid";
 import SectionProject from "../components/section/section-projects";
+import { ProjectTypeWriterEffect } from "../components/section/project-typewriter-effect";
 
 export default function GoogleGeminiEffectDemo() {
   const ref = React.useRef(null);
@@ -123,6 +124,7 @@ export default function GoogleGeminiEffectDemo() {
         <StickyScroll content={content} />
       </div>
       <SectionProject />
+
       {/* <div className="max-w-5xl mx-auto p-10 bg-slate-950 w-full">
         <HoverEffect items={projects} />
       </div> */}

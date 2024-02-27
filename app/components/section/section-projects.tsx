@@ -14,21 +14,25 @@ import Image from "next/image";
 import { BentoGrid, BentoGridItem } from "@/app/components/ui/bento-grid";
 import { cn } from "@/app/utils/cn";
 import Link from "next/link";
+import { ProjectTypeWriterEffect } from "./project-typewriter-effect";
 
 export default function SectionProject() {
   return (
-    <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem] pt-24">
-      {items.map((item, i) => (
-        <BentoGridItem
-          key={i}
-          title={item.title}
-          description={item.description}
-          header={item.header}
-          className={cn("[&>p:text-lg] bg-slate-50", item.className)}
-          icon={item.icon}
-        />
-      ))}
-    </BentoGrid>
+    <div className="flex flex-col">
+      <ProjectTypeWriterEffect />
+      <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem]">
+        {items.map((item, i) => (
+          <BentoGridItem
+            key={i}
+            title={item.title}
+            description={item.description}
+            header={item.header}
+            className={cn("[&>p:text-lg] bg-slate-50", item.className)}
+            icon={item.icon}
+          />
+        ))}
+      </BentoGrid>
+    </div>
   );
 }
 const Skeleton = () => (

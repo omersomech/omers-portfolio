@@ -68,25 +68,25 @@ export default function GoogleGeminiEffectDemo() {
 
   const content = [
     {
-      title: "Collaborative Editing",
+      title: "About me",
       description:
-        "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
+        "As a dedicated full-stack developer, I specialize in creating seamless and responsive web applications. With a focus on both front-end aesthetics and back-end functionality, I transform ideas into innovative digital solutions. Let's bring your concepts to life through the art and science of coding.",
     },
     {
-      title: "Real time changes",
+      title: "Front end development",
       description:
-        "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
+        "I specialize in front-end development, creating intuitive and responsive user interfaces that engage and delight users. I use the latest technologies to build dynamic and interactive web applications that are both visually appealing and highly functional.",
     },
     {
-      title: "Version control",
+      title: "Back end development",
       description:
-        "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+        "I specialize in back-end development, creating robust and scalable server-side applications that power the front-end user experience. I use the latest technologies to build secure and efficient web applications that deliver seamless performance and reliability.",
     },
-    {
-      title: "Running out of content",
-      description:
-        "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
-    },
+    // {
+    //   title: "Special Projects",
+    //   description:
+    //     "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+    // },
   ];
   return (
     <div>

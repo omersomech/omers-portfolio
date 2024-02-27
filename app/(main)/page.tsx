@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 import { StickyScroll } from "../components/ui/sticky-scroll-reveal";
 import { HoverEffect } from "../components/ui/card-hover-effect";
 import { GlowingStarsBackgroundCardPreview } from "./compenents/glowing";
+import { BentoGrid } from "../components/ui/bento-grid";
 
 export default function GoogleGeminiEffectDemo() {
   const ref = React.useRef(null);
@@ -120,6 +121,7 @@ export default function GoogleGeminiEffectDemo() {
       <div>
         <StickyScroll content={content} />
       </div>
+
       {/* <div className="max-w-5xl mx-auto p-10 bg-slate-950 w-full">
         <HoverEffect items={projects} />
       </div> */}

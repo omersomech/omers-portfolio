@@ -79,7 +79,7 @@ const SkeletonOne = () => {
           className="rounded-full h-10 w-10"
         />
         <p className="text-xs text-neutral-500">
-          Hi there I'm AIceberg and I'm a chatbot. how can I assist you today?
+          {`Hi there I'm AIceberg and I'm a chatbot. how can I assist you today?`}
         </p>
       </motion.div>
       <motion.div
